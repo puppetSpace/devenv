@@ -33,12 +33,11 @@ function InstallWinget{
     }
 }
 
-function InstallOhMyPosh{
-    winget install JanDeDobbeleer.OhMyPosh -s winget
-}
 
 function InstallWingetPackages{
     winget install Microsoft.WindowsTerminal
+    winget install JanDeDobbeleer.OhMyPosh -s winget
+    winget install Kubernetes.kubectl
 }
 
 function InstallWsl{
@@ -49,9 +48,9 @@ function InstallWsl{
 DownloadFromGithub;
 InstallFont;
 InstallWinget
-InstallOhMyPosh;
-SetPowershellProfile;
 InstallWingetPackages;
+SetPowershellProfile;
+
 
 
 
