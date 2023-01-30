@@ -57,14 +57,6 @@
           "type": "git"
         },
         {
-          "background": "#0184bc",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0c4",
-          "style": "powerline",
-          "template": " \ue70c {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }} ",
-          "type": "dotnet"
-        },
-        {
           "background": "#8800dd",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0c4",
