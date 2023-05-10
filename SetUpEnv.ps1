@@ -25,11 +25,11 @@ function SetPowershellProfile{
 }
 
 function InstallWinget{
-    $existing = Get-AppPackage -name "Microsoft.Winget.Source"
+    $existing = Get-AppxPackage -name "Microsoft.Winget.Source"
 
     if($existing -ne $null){
         wget "https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle" -O $envlocation;
-        Add-AppPackage -path "$envlocation/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle";
+        Add-AppxPackage -path "$envlocation/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle";
     }
 }
 
