@@ -57,6 +57,22 @@
           "type": "git"
         },
         {
+          "type": "dotnet",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#8b8d08",
+          "background": "#242424",
+          "template": "{{ if .Unsupported }}\uf071{{ else }}\ue77f {{ .Major }}.{{ .Minor }} {{ end }}"
+        },
+        {
+  "type": "terraform",
+  "style": "powerline",
+  "powerline_symbol": "",
+  "foreground": "#000000",
+  "background": "#ebcc34",
+  "template": "{{.WorkspaceName}}"
+},
+        {
           "background": "#8800dd",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0c4",
@@ -78,14 +94,6 @@
           "style": "powerline",
           "template": " \uf7d4 ",
           "type": "exit"
-        }, 
-        {
-          "type": "kubectl",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#000000",
-          "background": "#FFBB00",
-          "template": " \uFD31 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
         }
       ],
       "type": "prompt"
